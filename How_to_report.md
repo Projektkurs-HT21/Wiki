@@ -1,9 +1,5 @@
-# Access the report
-Click [here](https://github.com/Projektkurs-HT21/Report/blob/main/Report.pdf) for the current main version of the report.
-
-# Kom igång
+# Kom igång med Rapportskrivning
 Här går vi igenom hur man installerar allt som krävs för att bygga rapporten, hur man laddar ner den och hur versionshantering fungerar.
-
 
 ## Vad är Git?
 _Git_ är det verktyget vi använder för versionshantering. Tanken med versionshantering är att man ska kunna ha flera personer som jobbar på samma dokument, på olika datorer. Man laddar ner projektet på sin dator och gör ändringar. Efter det applicerar man ändringarna på projektet som ligger på internet. Fördelen med detta är även att man får en väldigt tydlig karta på alla versioner av ett projekt, och alla ändringar som har gjorts mellan dem.

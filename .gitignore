@@ -277,4 +277,4 @@ TSWLatexianTemp*
 *sublime-project
 *sublime-workspace
 Report/*.pdf
-README.html
+*.html
