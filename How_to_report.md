@@ -144,6 +144,42 @@ Nu har du gjort en commit, dvs du har sparat en ny version av projektet lokalt p
 
 ![](images/Github_push.png)
 
+## Lägg till ett till repository
+Om du vill lägga till ett annat repository i Github Desktop gör du följande. Tryck på pilen bredvid namnet på ditt current repository. Välj _add_ och sedan _Clone repository_.
+
+![](images/Github_Add_repo.png)
+
+Välj sedan repot på Github och tryck på _Clone_. Nu kan du trycka på pilen bredvid namnet igen och välja vilket repository du ska jobba på.
+
+![](images/Github_Clone_New.png)
+
+## Merge konflikt
+En _merge konflikt_ är när man har två branches som är gjorda från samma branch, och man gör ändringar i samma filer som är i konflikt med varandra. När man sedan försöker merga ihop dessa branches skapas det som kallas en konflikt.
+
+![](images/Mergekonflikt.png)
+
+I följande exempel har två branches gjorts från main i Report repot. I en av dem har en kommentar lagts på en rad i filen _Team\_members.tex_, och i den andra har samma rad tagits bort. Resultatet när dessa ska mergas blir att Git kommer försöka applicera båda ändringarna i den nya branchen, men då den inte lyckas både lägga till kommentaren och ta bort samma rad genererar den en merge konflikt. I Github Desktop ser det ut såhär.
+
+![](images/Github_Merge_Error.png)
+
+Den kommer inte låta dig fortsätta med mergen innan du löst konflikten. Det Git har gjort är dock att den sammanställt skillnaden i filen med konflikten i samma fil. Det låter dig manuellt gå in i filen och redigera den för att lösa konflikten. Tryck på _Open in Sublime Text_ för att få upp filen. Den kommer då se ut ungefär såhär.
+
+![](images/Github_Merge_Example.png)
+
+Notera raderna 10, 12 och 15. Där har Git lagt till taggar för att beskriva skillnaden i filen. Skillnaden börjar på rad 10 med ```<<<<<<< HEAD```. Efter det står första versionen av skillnaden. Det separeras sedan på rad 12 med ```=======```. Efter det står andra versionen av skillnaden. Det hela avslutas med ```>>>>>>> test1```, där test1 är namnet på branchen den försöker merga in i HEAD (test2). För att välja vilken version som ska användas av dessa två, eller manuellt kombinera dem, tas en av versionerna bort tillsammans med alla taggar. Här väljs kommentaren att tas bort. 
+
+![](images/Github_Merge_resolved1.png)
+
+Ett annat alternativ är att byta ut allt, och kombinera skillnaderna. Här görs det igenom att flytta kommentaren till en annan rad, samtidigt som att borttagandet av den gamla raden består.
+
+![](images/Github_Merge_resolved2.png)
+
+Nu när du löst konflikten kan du öppna Github Desktop igen, och där bör det nu stå _Merge resolved_.
+
+![](images/Github_Merge_Continue.png)
+
+Nu kan du välja _Continue merge_, och allt kommer att mergas, med de ändringar du gjort för att lösa konflikten.
+
 ## Sammanfattning
 Dokumentet har gått igenom vad Git och Github är, hur man använder Github Desktop för att hantera ett Git projekt, hur man installerar en textredigerare och en latex kompilator samt hur man committar och pushar till Git. 
 
