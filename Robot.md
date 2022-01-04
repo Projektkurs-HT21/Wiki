@@ -92,8 +92,8 @@ The application uses the [multiprocessing library](https://docs.python.org/3/lib
 
 ```python
 processes = {
-	'ui': mp.Process(target=ui.app.run),
-	'<YOUR PROCESS>: mp.Process(target=<YOUR FUNCTION>)
+	mp.Process(name="Controller", target=controller.run),
+	mp.Process(name="<YOUR PROCESS NAME>", target=<YOUR FUNCTION>)
 	}
 ```
 
