@@ -14,9 +14,15 @@ python3 app.py
 
 The application has some arguments that can be used to specify how it should be run.
 
+	-h, --help            show this help message and exit
 	-d, --debug           Run robot in debug mode.
+	-m, --motor-debug     Enable debugging for the motors.
 	-s, --simulate        Run robot in simulation mode, which can be run on a none-rpi system.
+	-a, --arrow-debug     Enable debugging for Arrowhead.
+	-r, --radio-debug     Enable debugging for the radio receiver.
+	-c, --control-debug   Enable debugging for the controller.
 	-t, --auto-terminate  Auto terminate application after 5 sec.
+
 
 # Robot setup
 
