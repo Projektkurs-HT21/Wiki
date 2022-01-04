@@ -97,5 +97,5 @@ processes = {
 	}
 ```
 
-How to use shared data and such will be described later when it is implemented.
+For the new process to terminate successfully, you should pass the `stop_event` to it. This event will be set when a terminate signal is sent to the program, so make sure your process checks this event reguraly and terminates the process correctly if this is set. To get access to the commandline arguments passed into the project you can access the object `args`.
 
