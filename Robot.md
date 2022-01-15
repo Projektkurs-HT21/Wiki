@@ -14,9 +14,15 @@ python3 app.py
 
 The application has some arguments that can be used to specify how it should be run.
 
+	-h, --help            show this help message and exit
 	-d, --debug           Run robot in debug mode.
+	-m, --motor-debug     Enable debugging for the motors.
 	-s, --simulate        Run robot in simulation mode, which can be run on a none-rpi system.
+	-a, --arrow-debug     Enable debugging for Arrowhead.
+	-r, --radio-debug     Enable debugging for the radio receiver.
+	-c, --control-debug   Enable debugging for the controller.
 	-t, --auto-terminate  Auto terminate application after 5 sec.
+
 
 # Robot setup
 
@@ -92,12 +98,12 @@ The application uses the [multiprocessing library](https://docs.python.org/3/lib
 
 ```python
 processes = {
-	'ui': mp.Process(target=ui.app.run),
-	'<YOUR PROCESS>: mp.Process(target=<YOUR FUNCTION>)
+	mp.Process(name="Controller", target=controller.run),
+	mp.Process(name="<YOUR PROCESS NAME>", target=<YOUR FUNCTION>)
 	}
 ```
 
-How to use shared data and such will be described later when it is implemented.
+For the new process to terminate successfully, you should pass the `stop_event` to it. This event will be set when a terminate signal is sent to the program, so make sure your process checks this event reguraly and terminates the process correctly if this is set. To get access to the commandline arguments passed into the project you can access the object `args`.
 
 ## Project structure
 
