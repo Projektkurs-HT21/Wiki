@@ -155,22 +155,30 @@ The battery handler is tasked with periodically reading the battery level from a
 ## Hardware
 
 ### Battery connections
-Batteries, power regulators, battery sensors
+- [ ] Batteries
+- [ ] Power regulators
+- [ ] Battery sensors
 
 ### GPS connection
-GPS network connection, power
+- [ ] GPS network connection
+- [ ] Power
 
 ### VESC driver connections
-Connection order on PI, motor connection
+- [ ] Connection order on PI
+- [ ] Motor connection
 
 ### STM32 driver connections
-Servo order on Blackpill, power
+- [ ] Servo order on Blackpill
+- [ ] Power
 
 ### Radio receiver
-Connection
+- [ ] Connection
 
 ## GPS 
-Initialization, Base station positioning
+- [ ] Initialization
+- [ ] Base station positioning
 
 ## 3G Modem
-Ethernet connections, setup, 3G
+- [ ] Ethernet connections
+- [ ] Setup
+- [ ] 3G
