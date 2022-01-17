@@ -13,3 +13,6 @@ This is the repository that contains all the necessary information about running
 4. [How to write the report](https://github.com/Projektkurs-HT21/Wiki/blob/master/How_to_report.md)
 
 5. [Report convenvtion](https://github.com/Projektkurs-HT21/Wiki/blob/master/Convention_report.md)
+
+6. [Short about the server](Server.md)
+7. 
