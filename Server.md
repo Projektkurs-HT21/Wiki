@@ -57,3 +57,17 @@ The main hub of the server is nix. Nix is snow in latin and the name of the webs
 All code for the website is in __init__.py. From there it will return different html files from templates corresponding to what site it should load.
 
 There are 2 files that nix will run in other repositories. It is pathfinder located in _Control-Simulation/python/full\_test\_discrete/base\_controller.py_ and _Pathfinder/pathfinding/pathfinder.py_. The _base\_controller.py_ can be removed from it repo if wanted. This is the Overseer controller that controls the speed of all robots. The _pathfinder.py_ uses a lot of code form the rest of the repository so it needs to have the whole repository included. This is the file that creates a path from the rest of the repositories.
+
+## Overview of server
+
+A short visual overview of the server.
+
+![](images/Server_structure.png)
+
+Providing path to robot.
+
+![](images/Actors_providing_path.png)
+
+Deployment of robots.
+
+![](images/Actors_overseer.png)

@@ -15,4 +15,3 @@ This is the repository that contains all the necessary information about running
 5. [Report convenvtion](https://github.com/Projektkurs-HT21/Wiki/blob/master/Convention_report.md)
 
 6. [Short about the server](Server.md)
-7. 
